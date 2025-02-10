@@ -71,3 +71,30 @@ input[type="button"]:hover {
 .equal:hover {
     background-color: #e08900;
 }
+:root {
+    --bg-color: #f4f4f4;
+    --text-color: #222;
+    --btn-bg: #ddd;
+    --btn-text: #000;
+}
+
+.dark-mode {
+    --bg-color: #222;
+    --text-color: #fff;
+    --btn-bg: #444;
+    --btn-text: #fff;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    transition: all 0.3s ease-in-out;
+}
+
+button {
+    background-color: var(--btn-bg);
+    color: var(--btn-text);
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
